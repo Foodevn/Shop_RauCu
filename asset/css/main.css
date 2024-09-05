@@ -16,6 +16,7 @@
 
 .header__navbar-item {
     margin: 0.8rem;
+    position: relative;
 }
 
 .header__navbar-item,
@@ -29,4 +30,15 @@
 
 .header__navbar-item--strong {
     font-weight: 600;
+}
+.header__navbar-item--separate::after
+{
+    content: "";
+    display: block;
+    position: absolute;
+    border: 1px solid #90ee99;
+    height: 14px;
+    right: -9px;
+    top:50%;
+    transform: translateY(-50%);
 }
